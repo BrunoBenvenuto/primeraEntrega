@@ -15,7 +15,7 @@
  #contenedor {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 0.05fr 0.3fr 0.3fr 0.3fr 1fr 0.3fr 0.2fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
      grid-template-areas:
          "nav"
          "header"
@@ -32,14 +32,11 @@
      justify-content: center;
      align-items: center;
      width: 100%;
-     padding: 10px;
+     height: 100px;
  }
 
  #logo {
      width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
  }
 
  header {
@@ -48,62 +45,131 @@
      background-image: url(../img/manos.jpg);
      background-size: cover;
      background-position: center;
-
+     height: 300px;
+     width: 100%;
  }
 
  /* CENTRAR TEXTO!!!!! */
  .textos {
-     padding: 150px;
      text-align: center;
  }
 
  #nosotros {
      grid-area: nosotros;
+     height: 300px;
+     width: 100%;
      background-color: #5298ff;
      display: grid;
-     grid-template-columns: 0.7fr;
+     grid-template-columns: 1fr;
      grid-template-rows: repeat(4, 0.4fr);
      grid-template-areas: "imgDos"
          "solEmp"
          "imgTres"
          "solOrg";
+
  }
 
  #imgDos {
      grid-area: imgDos;
+     width: 100%;
  }
 
  #solEmp {
      grid-area: solEmp;
+     width: 100%;
  }
 
  #imgTres {
-     height: auto;
-     max-width: 100%;
      grid-area: imgTres;
+     width: 100%;
  }
 
  #solOrg {
      grid-area: solOrg;
+     width: 100%;
  }
 
  #oportunidades {
+     height: 400px;
+     width: 100%;
      grid-area: oportunidades;
      background-color: beige;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas: "texto"
+         "cajas";
+
+ }
+
+ #textos {
+     grid-area: texto;
+     width: 100%;
+     height: 150px;
+ }
+
+ #cajaVoluntario {
+     height: 150px;
+     width: 180px;
+     background-color: #FF4A4A;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ #cajaDonar {
+     height: 150px;
+     width: 180px;
+     background-color: #FD841F;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ #cajaReciclar {
+     height: 150px;
+     width: 180px;
+     background-color: #54B435;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ #cajaLlamados {
+     height: 150px;
+     width: 180px;
+     background-color: #5CB8E4;
+     border-radius: 10px;
+     margin: 10px;
+     padding: 10px;
+ }
+
+ #cajas {
+     grid-area: cajas;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 1.5rem;
 
  }
 
  #noticias {
      grid-area: noticias;
      background-color: #5298ff;
+     height: 300px;
+     width: 100%;
  }
 
  #contacto {
      grid-area: contacto;
      background-color: aliceblue;
+     height: 200px;
+     width: 100%;
  }
 
  #footer {
      grid-area: footer;
      background-color: #7749F8;
+     height: 150px;
+     width: 100%;
  }
