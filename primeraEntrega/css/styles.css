@@ -1,0 +1,109 @@
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: 'Barlow Semi Condensed',
+         sans-serif;
+     font-family: 'DM Sans',
+         sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     width: 100%;
+ }
+
+ #contenedor {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.05fr 0.3fr 0.3fr 0.3fr 1fr 0.3fr 0.2fr;
+     grid-template-areas:
+         "nav"
+         "header"
+         "nosotros"
+         "oportunidades"
+         "noticias"
+         "contacto"
+         "footer";
+ }
+
+ nav {
+     grid-area: nav;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 10px;
+ }
+
+ #logo {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ header {
+     color: white;
+     grid-area: header;
+     background-image: url(../img/manos.jpg);
+     background-size: cover;
+     background-position: center;
+
+ }
+
+ /* CENTRAR TEXTO!!!!! */
+ .textos {
+     padding: 150px;
+     text-align: center;
+ }
+
+ #nosotros {
+     grid-area: nosotros;
+     background-color: #5298ff;
+     display: grid;
+     grid-template-columns: 0.7fr;
+     grid-template-rows: repeat(4, 0.4fr);
+     grid-template-areas: "imgDos"
+         "solEmp"
+         "imgTres"
+         "solOrg";
+ }
+
+ #imgDos {
+     grid-area: imgDos;
+ }
+
+ #solEmp {
+     grid-area: solEmp;
+ }
+
+ #imgTres {
+     height: auto;
+     max-width: 100%;
+     grid-area: imgTres;
+ }
+
+ #solOrg {
+     grid-area: solOrg;
+ }
+
+ #oportunidades {
+     grid-area: oportunidades;
+     background-color: beige;
+
+ }
+
+ #noticias {
+     grid-area: noticias;
+     background-color: #5298ff;
+ }
+
+ #contacto {
+     grid-area: contacto;
+     background-color: aliceblue;
+ }
+
+ #footer {
+     grid-area: footer;
+     background-color: #7749F8;
+ }
