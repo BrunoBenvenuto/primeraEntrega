@@ -8,6 +8,10 @@
      box-sizing: border-box;
  }
 
+ html {
+     font-size: 16px;
+ }
+
  body {
      width: 100%;
  }
@@ -15,7 +19,7 @@
  #contenedor {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr 1fr;
      grid-template-areas:
          "nav"
          "header"
@@ -32,11 +36,16 @@
      justify-content: center;
      align-items: center;
      width: 100%;
-     height: 100px;
+     height: 5rem;
  }
 
  #logo {
-     width: 100%;
+     width: 30%;
+     height: 100%;
+     background-image: url("../img/logo.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
  }
 
  header {
@@ -56,12 +65,13 @@
 
  #nosotros {
      grid-area: nosotros;
-     height: 300px;
+     height: 800px;
      width: 100%;
      background-color: #5298ff;
+     text-align: center;
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: repeat(4, 0.4fr);
+     grid-template-rows: repeat(4, 1fr);
      grid-template-areas: "imgDos"
          "solEmp"
          "imgTres"
@@ -71,22 +81,39 @@
 
  #imgDos {
      grid-area: imgDos;
+     background-image: url("../img/oficina.png");
+     background-size: cover;
      width: 100%;
+     height: 180px;
  }
 
  #solEmp {
      grid-area: solEmp;
-     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 90%;
  }
 
  #imgTres {
      grid-area: imgTres;
+     background-image: url("../img/voluntariado.jpg");
+     background-size: cover;
      width: 100%;
+     height: 180px;
  }
 
  #solOrg {
      grid-area: solOrg;
-     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 90%;
+     height: 140px;
+ }
+
+ .centrado {
+     margin-top: 10px;
  }
 
  #oportunidades {
