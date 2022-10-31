@@ -1,0 +1,29 @@
+footer{
+    padding: 10px;
+    background-color: #1c78fd;
+    color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nexosFooter" "infoFooter" "socialMediaFooter";
+}
+
+#nexosFooter{
+    grid-area: "nexosFooter";
+}
+
+#infoFooter{
+    grid-area: "infoFooter";
+}
+
+#socialMediaFooter{
+    grid-area: "socialMediaFooter";
+}
+
+.centrado{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}

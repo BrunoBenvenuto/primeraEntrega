@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed',
+        sans-serif;
+    font-family: 'DM Sans',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 18rem 50rem 45rem 40rem 30rem 28rem;
+    grid-template-areas:
+        "nav"
+        "header"
+        "nosotros"
+        "oportunidades"
+        "noticias"
+        "contacto"
+        "footer";
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+
+#logo {
+    width: 30%;
+    height: 100%;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    color: white;
+    grid-area: header;
+    background-image: url(../img/manos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* CENTRAR TEXTO!!!!! */
+
+#nosotros {
+    color: #ffff;
+    grid-area: nosotros;
+    height: 800px;
+    width: 100%;
+    background-color: #5298ff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "imgDos"
+        "solEmp"
+        "imgTres"
+        "solOrg";
+
+}
+
+#imgDos {
+    grid-area: imgDos;
+    background-image: url("../img/oficina.png");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+#solucionesEmp {
+    grid-area: solEmp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#imgTres {
+    grid-area: imgTres;
+    background-image: url("../img/voluntariado.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+#solucionesOrg {
+    grid-area: solOrg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.textosGenericos {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#oportunidades {
+    width: 100%;
+    padding-top: 10px;
+    grid-area: oportunidades;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "texto"
+        "cajas";
+}
+
+#textos {
+    grid-area: texto;
+    width: 100%;
+    height: 150px;
+}
+
+#cajaVoluntario {
+    height: 150px;
+    width: 180px;
+    background-color: #FF4A4A;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cajaDonar {
+    height: 150px;
+    width: 180px;
+    background-color: #FD841F;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cajaReciclar {
+    height: 150px;
+    width: 180px;
+    background-color: #54B435;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cajaLlamados {
+    height: 150px;
+    width: 180px;
+    background-color: #5CB8E4;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cajas {
+    color: #ffff;
+    grid-area: cajas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1.5rem;
+    margin-top: 15px;
+}
+
+#noticias {
+    grid-area: noticias;
+    background-color: #5298ff;
+    
+    width: 100%;
+}
+
+#contacto {
+    grid-area: contacto;
+    background-color: aliceblue;
+    
+    width: 100%;
+}
+
+
+footer{
+    padding: 10px;
+    background-color: #7749F8;
+    color: #ffff;
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nexosFooter" "infoFooter" "socialMediaFooter";
+}
+
+#nexosFooter{
+    grid-area: "nexosFooter";
+}
+
+#infoFooter{
+    grid-area: "infoFooter";
+}
+
+#socialMediaFooter{
+    grid-area: "socialMediaFooter";
+}
+
+.centrado{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+#encabezado{
+    display: flex;
+    flex-direction: column;
+}
